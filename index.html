@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>OMTAMIL DEMO APPS</title>
+	<link rel="stylesheet"  href="css/jquery.mobile.min.css">
+	<style>
+		#homeBanner {
+			width: 100%;
+		}
+		.center {
+			text-align: center;
+			margin-left: auto;
+			margin-right:auto;
+		}
+		.banner {
+			display:block;
+			width: 100%;
+		}
+		#qrcode {
+			display:block;	
+			margin-left: auto;
+			margin-right:auto;
+		}
+		#map2 {
+			margin-left: auto;
+			margin-right:auto;
+			width: 320px;
+			height: 320px;  
+		}
+	</style>
+	<link rel="stylesheet" href="css/leaflet.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile.min.js"></script>
+
+</head>
+	
+<body>
+<div id="homeScreen" data-role="page">
+	<img src="imgs/banner.png" class="banner" />
+	<div data-role="content">
+	
+	<ul data-role="listview"  data-filter="true" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+	
+				<li><a href="#list3"><img src="imgs/qr.png>
+				<h2>selva3</h2>
+				<p>Custom small icons</p></a>
+			</li>
+			
+						<li><a href="#list1"><img src="imgs/qr.png">
+				<h2></h2>
+				<p>Numbered and without number</p></a>
+			</li>
+	
+			<li><a href="#list4"><img src="imgs/Westhoff_thumb.png">
+				<h2>Autodividers List</h2>
+				<p>Anchor jump scroll linkbars </p></a>
+			</li>
+			<li><a href="#list5"><img src="imgs/101733188_thumb.png">
+				<h2>Formatted Content List</h2>
+				<p>Dividers, paragraphs and more</p></a>
+			</li>
+			<li><a href="#simple"><img src="imgs/106588354_thumb.png">
+				<h2>Linked List</h2>
+				<p>List items with links are styled as button</p></a>
+			</li>
+			<li><a href="#list7"><img src="imgs/924520721_thumb.png">
+				<h2>Default Theme</h2>
+				<p>A and B swatches theming styles</p></a>
+			</li>
+
+			<li><a href="#tab"><img src="imgs/Watching_thumb.png">
+				<h2>kumaran</h2>
+				<p>Default list with no link</p></a>
+			</li>
+			
+					<li><a href="http://omtamil.tv"><img src="imgs/omtamil.tv.png">
+				<h2>Web Link</h2>
+				<p>Link to external hyperlink</p></a>
+			</li>
+			
+		</ul>
+
+	
+		<div class="ui-grid-a center">
+    		<div class="ui-block-a">
+				<a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+			</div>
+    		<div class="ui-block-b">
+				<a href="#mapScreen" class="ui-btn ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Map</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="list1" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Read-only, unordered List</h1>
+<ul data-role="listview">
+    <li>Acura</li>
+    <li>Audi</li>
+    <li>BMW</li>
+    <li>Cadillac</li>
+    <li>Ferrari</li>
+</ul>
+
+<h1 class="center">Read-only, ordered List</h1>
+<ol data-role="listview">
+    <li>Acura</li>
+    <li>Audi</li>
+    <li>BMW</li>
+    <li>Cadillac</li>
+    <li>Ferrari</li>
+</ol>
+
+	</div>
+</div>
+
+
+<div id="list3" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h1 class="center">iconlist</h1>
+	<ul data-role="listview"  data-filter="true" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+    <li><a href="#"><img src="imgs/gf.png" alt="France" class="ui-li-icon ui-corner-none">France</a></li>
+    <li><a href="#"><img src="imgs/de.png" alt="Germany" class="ui-li-icon">Germany</a></li>
+    <li><a href="#"><img src="imgs/gb.png" alt="Great Britain" class="ui-li-icon">Great Britain</a></li>
+    <li><a href="#"><img src="imgs/fi.png" alt="Finland" class="ui-li-icon">Finland</a></li>
+    <li><a href="#"><img src="imgs/us.png" alt="United States" class="ui-li-icon ui-corner-none">United States</a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list4" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Autodividers List</h1>
+		<ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+    <li><a href="index.html">Adam Kinkaid</a></li>
+    <li><a href="index.html">Alex Wickerham</a></li>
+    <li><a href="index.html">Avery Johnson</a></li>
+    <li><a href="index.html">Bob Cabot</a></li>
+    <li><a href="index.html">Caleb Booth</a></li>
+    <li><a href="index.html">Christopher Adams</a></li>
+    <li><a href="index.html">Culver James</a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list5" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Formatted Content List</h1>
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+    <li><a href="index.html">
+    <h2>Stephen Weber</h2>
+    <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+    <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+        <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+    </a></li>
+    <li><a href="index.html">
+    <h2>jQuery Team</h2>
+    <p><strong>Boston Conference Planning</strong></p>
+    <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+        <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+    </a></li>
+    <li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
+    <li><a href="index.html">
+    <h2>Avery Walker</h2>
+    <p><strong>Re: Dinner Tonight</strong></p>
+    <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait!</p>
+        <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+    </a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list6" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Form</h1>
+<form>
+    <ul data-role="listview" data-inset="true">
+        <li class="ui-field-contain">
+            <label for="name2">Text Input:</label>
+            <input type="text" name="name2" id="name2" value="" data-clear-btn="true">
+        </li>
+        <li class="ui-field-contain">
+            <label for="textarea2">Textarea:</label>
+        <textarea cols="40" rows="8" name="textarea2" id="textarea2"></textarea>
+        </li>
+        <li class="ui-field-contain">
+            <label for="flip2">Flip switch:</label>
+            <select name="flip2" id="flip2" data-role="slider">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+        </li>
+        <li class="ui-field-contain">
+            <label for="slider2">Slider:</label>
+            <input type="range" name="slider2" id="slider2" value="0" min="0" max="100" data-highlight="true">
+        </li>
+        <li class="ui-field-contain">
+            <label for="select-choice-1" class="select">Choose shipping method:</label>
+            <select name="select-choice-1" id="select-choice-1">
+                <option value="standard">Standard: 7 day</option>
+                <option value="rush">Rush: 3 days</option>
+                <option value="express">Express: next day</option>
+                <option value="overnight">Overnight</option>
+            </select>
+        </li>
+        <li class="ui-body ui-body-b">
+            <fieldset class="ui-grid-a">
+                    <div class="ui-block-a"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Cancel</button></div>
+                    <div class="ui-block-b"><button type="submit" class="ui-btn ui-corner-all ui-btn-a">Submit</button></div>
+            </fieldset>
+        </li>
+    </ul>
+</form>
+	</div>
+</div>
+
+
+<div id="list7" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Theme</h1>
+<ul data-role="listview" data-inset="true" data-theme="b" data-divider-theme="a" data-count-theme="a">
+    <li data-role="list-divider">Divider</li>
+    <li><a href="index.html" data-theme="a">Inbox <span class="ui-li-count">12</span></a></li>
+    <li><a href="index.html">Outbox <span class="ui-li-count">0</span></a></li>
+    <li><a href="index.html">Sent <span class="ui-li-count">328</span></a></li>
+</ul>
+
+<ul data-role="listview" data-inset="true" data-theme="a" data-divider-theme="b" data-count-theme="b">
+    <li data-role="list-divider">Divider</li>
+    <li><a href="index.html" data-theme="b">Inbox <span class="ui-li-count">12</span></a></li>
+    <li><a href="index.html">Outbox <span class="ui-li-count">0</span></a></li>
+    <li><a href="index.html">Sent <span class="ui-li-count">328</span></a></li>
+</ul>
+	</div>
+</div>
+
+<div id="list8" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h1 class="center">Grouped collapsible with listviews</h1>
+	<div data-role="collapsible-set" data-theme="a" data-content-theme="b">
+    <div data-role="collapsible">
+    <h2>Filtered list</h2>
+        <ul data-role="listview" data-filter="true" data-filter-theme="a" data-divider-theme="b">
+            <li><a href="index.html">Adam Kinkaid</a></li>
+            <li><a href="index.html">Alex Wickerham</a></li>
+            <li><a href="index.html">Avery Johnson</a></li>
+            <li><a href="index.html">Bob Cabot</a></li>
+            <li><a href="index.html">Caleb Booth</a></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+    <h2>Formatted text</h2>
+        <ul data-role="listview" data-theme="a" data-divider-theme="b">
+            <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+            <li><a href="index.html">
+                <h3>Stephen Weber</h3>
+            <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+            <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+            </a></li>
+            <li><a href="index.html">
+                <h3>jQuery Team</h3>
+            <p><strong>Boston Conference Planning</strong></p>
+            <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+            </a></li>
+        </ul>
+    </div>
+    <div data-role="collapsible">
+    <h2>Thumbnails and split button</h2>
+        <ul data-role="listview" data-split-icon="gear" data-split-theme="a">
+            <li><a href="index.html">
+                <img src="imgs/album-bb.jpg">
+                <h3>Broken Bells</h3>
+            <p>Broken Bells</p>
+                </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+            <li><a href="index.html">
+                <img src="imgs/album-hc.jpg">
+                <h3>Warning</h3>
+            <p>Hot Chip</p>
+            </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+            <li><a href="index.html">
+                <img src="imgs/album-p.jpg">
+                <h3>Wolfgang Amadeus Phoenix</h3>
+            <p>Phoenix</p>
+                </a><a href="lists-split-purchase.html" data-rel="dialog" data-transition="slideup">Purchase album
+            </a></li>
+        </ul>
+    </div>
+</div>
+	</div>
+</div>
+
+<div id="list9" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Filter reveal</h1>
+<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search fruits..." data-inset="true">
+    <li><a href="#">Apple</a></li>
+    <li><a href="#">Banana</a></li>
+    <li><a href="#">Cherry</a></li>
+    <li><a href="#">Cranberry</a></li>
+    <li><a href="#">Grape</a></li>
+    <li><a href="#">Orange</a></li>
+</ul>
+	</div>
+</div>
+
+
+<div id="list10" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+	<h1 class="center">Count bubbles</h1>
+<ul data-role="listview" data-count-theme="b" data-inset="true">
+    <li><a href="#">Inbox <span class="ui-li-count">12</span></a></li>
+    <li><a href="#">Outbox <span class="ui-li-count">0</span></a></li>
+    <li><a href="#">Drafts <span class="ui-li-count">4</span></a></li>
+    <li><a href="#">Sent <span class="ui-li-count">328</span></a></li>
+    <li><a href="#">Trash <span class="ui-li-count">62</span></a></li>
+</ul>
+	</div>
+</div>
+
+<div id="tab" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>TAB SAMPLE</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<div data-role="tabs" id="tabs">
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#one" data-ajax="false">one</a></li>
+      <li><a href="#two" data-ajax="false">two</a></li>
+      <li><a href="ajax-content-ignore.html" data-ajax="false">three</a></li>
+    </ul>
+  </div>
+  <div id="one" class="ui-body-d ui-content">
+    <h1>First tab contents</h1>
+  </div>
+  <div id="two">
+    <ul data-role="listview" data-inset="true">
+        <li><a href="#">Acura</a></li>
+        <li><a href="#">Audi</a></li>
+        <li><a href="#">BMW</a></li>
+        <li><a href="#">Cadillac</a></li>
+        <li><a href="#">Ferrari</a></li>
+    </ul>
+  </div>
+</div>
+	</div>
+</div>
+
+<div id="red" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>RED</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">San Angelico Museum of Contemporary Art</h2>
+		<p class="center">123 Main Street Ventura, CA 12345<br>(800)555-1212</p>
+		<div id="map2"><img src="imgs/101733188_thumb.png"></div>
+	</div>
+</div>
+	
+<div id="simple" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>Simple List</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+
+	
+	
+	
+	
+	
+		<ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+			<li><a href="#list6">Form</a></li>
+			<li><a href="#list8">Grouped collapsible with listviews</a></li>
+			<li><a href="#list9">Filter reveal</a></li>
+				<li><a href="#list10">Count bubbles</a></li>
+					<li><a href="#red">Text and Image Content</a></li>
+
+		</ul>
+	</div>
+</div>	
+	
+	
+<div id="mapScreen" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">OMTAMIL DOTCOM</h2>
+		<p class="center">No. 16, Jln SL9/9A, Palm Walk, Bandar Sg Long ,<br>43200 Selangor MALAYSIA</p>
+
+		<p class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.0391590093255!2d101.80669599999999!3d3.0527080000000093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3367e9ed6c9f%3A0x38d1b5e827f2b4cf!2sJalan+SL+9%2F9a%2C+Bandar+Sungai+Long%2C+43000+Kajang%2C+Selangor!5e0!3m2!1sta!2smy!4v1412396778230" width="100%" height="400" frameborder="0" style="border:0"></iframe></p>
+
+	</div>
+</div>
+
+
+
+
+<div id="aboutScreen" data-role="page">
+	<header data-role="header" data-position="fixed" data-id="appHeader">
+		<h1>OMTAMIL</h1>
+		<a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+	</header>
+	<div data-role="content">
+		<h2 class="center">OMTAMIL DOTCOM (002135971-U)</h2>
+		
+		<img class="center banner" src="imgs/omtamil-dotcom.png" />
+		OMTAMIL DOTCOM (002135971-U), IS A REGISTERED ENTERPRISE IN MALAYSIA SINCE 2012. WE OFFER ONLINE-MOBILE TRAINING AND SERVICES (E-LEARNING, MOBILE APPS, WEB TOOLS, SOCIAL MEDIA, MULTIMEDIA, E-COMMERCE) TO SCHOOLS, INSTITUTES, COLLEGES, UNIVERSITIES, EDUCATORS, BUSINESSES, ORGANIZATIONS, AND INDIVIDUALS IN BOTH TAMIL AND ENGLISH.</p>
+	</div>
+</div>
+	<!--
+	Admission
+	Directions
+	Parking
+	Hours
+	Volunteer
+	-->
+</body>
+</html>
